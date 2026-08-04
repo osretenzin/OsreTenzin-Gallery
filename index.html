@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería de Imágenes</title>
+    <title>Mi Galería Personal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Mi Galería de Arte</h1>
-        <p>Una colección visual creada con GitHub Pages</p>
+        <p>Sube contenido directamente a tu repositorio</p>
     </header>
 
-    <main class="gallery-container">
-        <!-- Reemplaza las URLs de las imágenes con las tuyas -->
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe" alt="Arte abstracto 1">
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4" alt="Arte abstracto 2">
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead" alt="Arte abstracto 3">
-        </div>
+    <!-- Panel para subir imágenes (Solo para ti) -->
+    <section class="upload-panel">
+        <h2>Subir Nueva Imagen</h2>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="githubToken">Token de GitHub:</label>
+                <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxx" required>
+            </div>
+            <div class="form-group">
+                <label for="repoName">Repositorio (usuario/nombre):</label>
+                <input type="text" id="repoName" placeholder="tu-usuario/nombre-repo" required>
+            </div>
+            <div class="form-group">
+                <label for="imageFile">Selecciona la imagen:</label>
+                <input type="file" id="imageFile" accept="image/*" required>
+            </div>
+            <button type="submit" id="submitBtn">Publicar en GitHub</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+
+    <!-- Galería -->
+    <main class="gallery-container" id="galleryContainer">
+        <!-- Las imágenes se cargarán aquí -->
     </main>
 
     <footer>
         <p>&copy; 2026 - Creado con GitHub Pages</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
