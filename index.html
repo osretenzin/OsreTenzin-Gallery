@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería con Cloudinary</title>
+    <title>Mi Galería Interactiva</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Iconos para los botones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
         <h1>Mi Galería en la Nube</h1>
-        <p>Sube tus fotos con almacenamiento optimizado</p>
+        <p>Sube, comparte y da likes a tus fotos favoritas</p>
     </header>
 
     <!-- Panel de subida -->
@@ -36,13 +38,16 @@
 
     <!-- Galería -->
     <main class="gallery-container" id="galleryContainer">
-        <!-- Las imágenes se cargarán aquí -->
+        <!-- Las imágenes se cargarán aquí dinámicamente -->
     </main>
 
     <footer>
-        <p>&copy; 2026 - Galería optimizada</p>
+        <p>&copy; 2026 - Galería Interactiva</p>
     </footer>
 
+    <!-- Script de Supabase para manejar la base de datos -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
