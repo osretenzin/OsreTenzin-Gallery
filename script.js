@@ -1,6 +1,7 @@
 // Configura tus credenciales de Supabase aquí
-const SUPABASE_URL = 'TU_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'TU_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'supabase link --project-ref evkrywrkptsitgijmexo
+';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV2a3J5d3JrcHRzaXRnaWptZXhvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU5MjI5NzcsImV4cCI6MjEwMTQ5ODk3N30.nqzl6gOpJeXZm3xUW5N9sIjm8yQIHUlrwS-YXf1IvSk0';
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const form = document.getElementById('uploadForm');
@@ -8,7 +9,7 @@ const statusMessage = document.getElementById('statusMessage');
 const galleryContainer = document.getElementById('galleryContainer');
 
 // Contraseña secreta para poder borrar imágenes
-const ADMIN_PASSWORD = 'MiPasswordSecreto123'; 
+const ADMIN_PASSWORD = '22185'; 
 
 document.addEventListener('DOMContentLoaded', loadGallery);
 
