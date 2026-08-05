@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Galería Personal</title>
+    <title>Mi Galería con Cloudinary</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Mi Galería de Arte</h1>
-        <p>Sube contenido directamente a tu repositorio</p>
+        <h1>Mi Galería en la Nube</h1>
+        <p>Sube tus fotos con almacenamiento optimizado</p>
     </header>
 
-    <!-- Panel para subir imágenes (Solo para ti) -->
+    <!-- Panel de subida -->
     <section class="upload-panel">
         <h2>Subir Nueva Imagen</h2>
         <form id="uploadForm">
             <div class="form-group">
-                <label for="githubToken">Token de GitHub:</label>
-                <input type="password" id="githubToken" placeholder="ghp_xxxxxxxxxxxx" required>
+                <label for="cloudName">Cloud Name de Cloudinary:</label>
+                <input type="text" id="cloudName" placeholder="tu-cloud-name" required>
             </div>
             <div class="form-group">
-                <label for="repoName">Repositorio (usuario/nombre):</label>
-                <input type="text" id="repoName" placeholder="tu-usuario/nombre-repo" required>
+                <label for="uploadPreset">Upload Preset (Unsigned):</label>
+                <input type="text" id="uploadPreset" placeholder="nombre-del-preset" required>
             </div>
             <div class="form-group">
                 <label for="imageFile">Selecciona la imagen:</label>
                 <input type="file" id="imageFile" accept="image/*" required>
             </div>
-            <button type="submit" id="submitBtn">Publicar en GitHub</button>
+            <button type="submit" id="submitBtn">Subir a Cloudinary</button>
         </form>
         <p id="statusMessage"></p>
     </section>
@@ -40,7 +40,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 - Creado con GitHub Pages</p>
+        <p>&copy; 2026 - Galería optimizada</p>
     </footer>
 
     <script src="script.js"></script>
